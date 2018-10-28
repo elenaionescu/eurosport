@@ -1,0 +1,13 @@
+.nationality {
+    color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.nationality img {
+    width: 50px;
+    height: 100%;
+}

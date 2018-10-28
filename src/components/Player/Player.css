@@ -1,0 +1,22 @@
+.player {
+    border: 1px solid var(--main-bg-color);
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out, box-shadow .4s;
+}
+
+.player:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 15px 2px var(--main-bg-color);
+}
+
+@media (max-width: 768px) {
+
+    .player {
+        margin-bottom: 30px;
+    }
+
+  }
