@@ -8,6 +8,7 @@ import Name from './Name/Name';
 import Avatar from './Avatar/Avatar';
 import Ranking from './Ranking/Ranking';
 import Points from './Points/Points';
+import WinLosses from './WinLosses/WinLosses';
 
 const player = (props) => (
     <div className={classes.player}>
@@ -19,6 +20,7 @@ const player = (props) => (
         <Info label="Weight" value={`${props.data.weight/1000}kg`} />
         <Info label="Height" value={`${props.data.height}cm`} />
         <Points points={props.data.points}/>
+        <WinLosses score={props.data.last} />
     </div>
 );
 
