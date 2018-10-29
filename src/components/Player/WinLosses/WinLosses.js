@@ -1,14 +1,19 @@
 import React from 'react';
 import calculateScore from '../../../utils/calculateScore';
-import './winlosses.css';
+import classes from './winlosses.css';
 
 const WinsLosses = ({ score }) => {
   const arr = calculateScore(score);
   return (
-    <div className="win-loss">
-      <div>Wins: {arr[0]}</div>
-      <div>Losses: {arr[1]}</div>
+    <div>
+      <div className={classes.winlosses}>
+        <h3>Wins: {arr[0]}</h3>
+      </div>
+      <div className={classes.winlosses}>
+        <h3>Losses:  {arr[1]}</h3>
+      </div>
     </div>
+
   );
 };
 
