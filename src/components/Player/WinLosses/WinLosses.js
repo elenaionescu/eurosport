@@ -7,10 +7,12 @@ const WinsLosses = ({ score }) => {
   return (
     <div>
       <div className={classes.winlosses}>
-        <h3>Wins: {arr[0]}</h3>
+        <h3>Wins:</h3>
+        <span> {arr[0]}</span>
       </div>
       <div className={classes.winlosses}>
-        <h3>Losses:  {arr[1]}</h3>
+        <h3>Losses:</h3>
+        <span>{arr[1]}</span>
       </div>
     </div>
 
